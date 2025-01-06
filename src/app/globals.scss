@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  //
+  // colors pallet
+  --color-primary: #6e7125;
+  --color-on-primary: #ffffff;
+
+  --color-secondary: #cbb57a;
+  --color-on-secondary: #ffffff;
+
+  --color-surface: #f2f4f4;
+  --color-surface-bright: #ffffff;
+  --color-surface-dim: #ffffff;
+
+  --color-on-surface: #ffffff;
+  --color-on-surface-variant: #ffffff;
+
+  --color-outline: #473e0f;
+  --color-outline-variant: #473e0f;
+
+  // colors status
+  --color-error: #ffd5d5;
+  --color-on-error: #ff5a6b;
+
+  --color-warning: #ffedd5;
+  --color-on-warning: #eb8c00;
+
+  --color-info: #e5d5ff;
+  --color-on-info: #4fc2f7;
+
+  --color-success: #edf7ed;
+  --color-on-success: #28972e;
+
+  --color-light: #ffffff;
+  --color-dark: #000000;
+
+  --breakpoint-breakpoint-sm: $breakpoint-sm;
+  --breakpoint-breakpoint-md: $breakpoint-md;
+  --breakpoint-breakpoint-lg: $breakpoint-lg;
+  --breakpoint-breakpoint-xl: $breakpoint-xl;
+
+  --swiper-navigation-color: var(--color-outline);
+  --swiper-pagination-color: var(--color-outline);
+}
+
+#dark {
+  //
+  // colors pallet
+  --color-primary: #f3a738;
+  --color-on-primary: #031c2d;
+  --color-primary-container: #f3a738;
+  --color-on-primary-container: #031c2d;
+
+  --color-secondary: #023047;
+  --color-on-secondary: #fff5ee;
+  --color-secondary-container: #023047;
+  --color-on-secondary-container: #fff5ee;
+
+  --color-surface: #f2f4f4;
+  --color-surface-bright: #ffffff;
+  --color-surface-dim: #0458bc;
+  --color-surface-container: #ffffff;
+
+  --color-on-surface: #ffffff;
+  --color-on-surface-variant: #728197;
+
+  --color-outline: #728197;
+  --color-outline-variant: #0458bc;
+
+  // colors status
+  --color-error: #ffd5d5;
+  --color-on-error: #ff5a6b;
+
+  --color-warning: #ffedd5;
+  --color-on-warning: #eb8c00;
+
+  --color-info: #e5d5ff;
+  --color-on-info: #4fc2f7;
+
+  --color-success: #edf7ed;
+  --color-on-success: #28972e;
+}
+
+html,
+body,
+#__next {
+  @apply text-surface-on;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  word-spacing: 2px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-sizing: border-box;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  word-spacing: -0.01em !important;
+}
+
+html,
+head,
+body {
+  touch-action: pan-y pan-x;
+  -webkit-overflow-scrolling: touch;
+  -ms-content-zooming: none;
+  font-family: var(--font-family) !important;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea {
+  // font-family: var(--font-family) !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
